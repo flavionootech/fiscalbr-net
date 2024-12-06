@@ -4916,7 +4916,7 @@ namespace FiscalBr.EFDFiscal
             ///    Unidade do item (Campo 02 do registro 0190)
             /// </summary>
             [SpedCampos(5, "UNID", "C", 6, 0, true, 2)]
-            public int Unid { get; set; }
+            public string Unid { get; set; }
 
             /// <summary>
             ///     Valor total do item(mercadorias ou serviços)
