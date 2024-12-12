@@ -458,13 +458,13 @@ namespace FiscalBr.EFDContribuicoes
             ///     Número  do  documento  fiscal  inicial  emitido  no período (mesmo modelo, série e subsérie).
             /// </summary>
             [SpedCampos(6, "NUM_DOC_INI", "N", 9, 0, true, 2)]
-            public string NumDocIni { get; set; }
+            public int NumDocIni { get; set; }
 
             /// <summary>
             ///    Número  do documento  fiscal  final  emitido  no período (mesmo modelo, série e subsérie).
             /// </summary>
             [SpedCampos(7, "NUM_DOC_FIN", "N", 9, 0, true, 2)]
-            public string NumDocFin { get; set; }
+            public int NumDocFin { get; set; }
 
             /// <summary>
             ///     Código  Fiscal  de  Operação  e  Prestação  conforme tabela indicada no item 4.2.2
@@ -482,13 +482,13 @@ namespace FiscalBr.EFDContribuicoes
             ///    Valor total dos documentos fiscais
             /// </summary>
             [SpedCampos(10, "VL_DOC", "N", 0, 2, true, 2)]
-            public string VlDoc { get; set; }
+            public decimal? VlDoc { get; set; }
 
             /// <summary>
             ///     Valor total dos descontos
             /// </summary>
             [SpedCampos(11, "VL_DESC", "N", 0, 2, false, 2)]
-            public string VlDesc { get; set; }
+            public decimal? VlDesc { get; set; }
 
             public List<RegistroD201> RegD201s { get; set; }
             public List<RegistroD205> RegD205s { get; set; }
@@ -519,7 +519,7 @@ namespace FiscalBr.EFDContribuicoes
             ///     Valor total dos itens
             /// </summary>
             [SpedCampos(3, "VL_ITEM", "N", 0, 2, true, 2)]
-            public string VlItem { get; set; }
+            public decimal? VlItem { get; set; }
 
             /// <summary>
             ///     Valor da base de cálculo do PIS/PASEP (em valor)
@@ -569,25 +569,25 @@ namespace FiscalBr.EFDContribuicoes
             ///     Valor total dos itens
             /// </summary>
             [SpedCampos(3, "VL_ITEM", "N", 0, 2, true, 2)]
-            public string VlItem { get; set; }
+            public decimal? VlItem { get; set; }
 
             /// <summary>
             ///     Valor da base de cálculo da COFINS
             /// </summary>
             [SpedCampos(4, "VL_BC_COFINS", "N", 0, 2, false, 2)]
-            public string VlBcCofins { get; set; }
+            public decimal? VlBcCofins { get; set; }
 
             /// <summary>
             ///    Alíquota da COFINS (em percentual)
             /// </summary>
             [SpedCampos(5, "ALIQ_COFINS", "N", 8, 4, false, 2)]
-            public string AliqCofins { get; set; }
+            public decimal? AliqCofins { get; set; }
 
             /// <summary>
             ///    Valor da COFINS
             /// </summary>
             [SpedCampos(6, "VL_COFINS", "N", 0, 2, false, 2)]
-            public string VlCofins { get; set; }
+            public decimal? VlCofins { get; set; }
 
             /// <summary>
             ///    Código da conta analítica contábil debitada/creditada 
