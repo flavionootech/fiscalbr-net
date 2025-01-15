@@ -40,8 +40,8 @@ namespace FiscalBr.Sintegra
         /// <summary>
         /// Código do modelo da nota fiscal
         /// </summary>
-        [SintegraCampos(6, "MODELO", "N", 2, 0, true)]
-        public int Modelo { get; set; }
+        [SintegraCampos(6, "MODELO", "X", 2, 0, true)]
+        public string Modelo { get; set; }
 
         /// <summary>
         /// Série da nota fiscal
