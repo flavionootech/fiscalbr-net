@@ -2108,13 +2108,13 @@ namespace FiscalBr.EFDContribuicoes
             ///     Código  do  modelo  do  documento  fiscal,  conforme  a Tabela 4.1.1
             /// </summary>
             [SpedCampos(2, "COD_MOD", "C", 2, 0, true, 2)]
-            public int CodMod { get; set; }
+            public string CodMod { get; set; }
 
             /// <summary>
             ///     Código da situação do documento fiscal, conforme a Tabela 4.1.2
             /// </summary>
             [SpedCampos(3, "COD_SIT", "N", 2, 0, true, 2)]
-            public string CodSit { get; set; }
+            public int CodSit { get; set; }
 
             /// <summary>
             ///     Número do Cupom Fiscal Eletrônico
@@ -2131,14 +2131,14 @@ namespace FiscalBr.EFDContribuicoes
             /// <summary>
             ///     Valor total do Cupom Fiscal Eletrônico
             /// </summary>
-            [SpedCampos(6, "VL_CFE", "N", 0, 2, true, 2)]
-            public int VlCfe { get; set; }
+            [SpedCampos(6, "VL_CFE", "N", 0, 2, false, 2)]
+            public decimal? VlCfe { get; set; }
 
             /// <summary>
             ///   Valor total do PIS
             /// </summary>
             [SpedCampos(7, "VL_PIS", "N", 0, 2, false, 2)]
-            public int VlPis { get; set; }
+            public decimal? VlPis { get; set; }
 
             /// <summary>
             ///     Valor da COFINS
@@ -2150,19 +2150,19 @@ namespace FiscalBr.EFDContribuicoes
             ///     CNPJ ou CPF do destinatário
             /// </summary>
             [SpedCampos(9, "CNPJ_CPF", "N", 14, 0, false, 2)]
-            public int CnpjCpf { get; set; }
+            public string CnpjCpf { get; set; }
 
             /// <summary>
             ///   Número de Série do equipamento SAT
             /// </summary>
-            [SpedCampos(10, "NR_SAT", "N", 9, 0, false, 2)]
-            public decimal? NtSat { get; set; }
+            [SpedCampos(10, "NR_SAT", "N", 9, 0, true, 2)]
+            public string NrSat { get; set; }
 
             /// <summary>
             ///     Chave do Cupom Fiscal Eletrônico
             /// </summary>
-            [SpedCampos(11, "CHV_CFE", "N", 44, 0, false, 2)]
-            public decimal? ChvCfe { get; set; }
+            [SpedCampos(11, "CHV_CFE", "N", 44, 0, true, 2)]
+            public string ChvCfe { get; set; }
 
             /// <summary>
             ///    Valor total do desconto/exclusão sobre item
@@ -2173,20 +2173,20 @@ namespace FiscalBr.EFDContribuicoes
             /// <summary>
             ///     Valor total das mercadorias e serviços
             /// </summary>
-            [SpedCampos(13, "VL_MERC", "C", 60, 0, false, 2)]
-            public string VlMerc { get; set; }
+            [SpedCampos(13, "VL_MERC", "N", 0, 2, false, 2)]
+            public decimal? VlMerc { get; set; }
 
             /// <summary>
             ///     Valor de outras desp. Acessórias (acréscimo)
             /// </summary>
             [SpedCampos(14, "VL_OUT_DA", "N", 0, 2, false, 2)]
-            public string VlOutDa { get; set; }
+            public decimal? VlOutDa { get; set; }
 
             /// <summary>
             ///     Valor do ICMS
             /// </summary>
             [SpedCampos(15, "VL_ICMS", "N", 0, 2, false, 2)]
-            public int VlIcms { get; set; }
+            public decimal? VlIcms { get; set; }
 
             /// <summary>
             ///     Valor total do PIS retido por subst. trib.
@@ -2222,8 +2222,8 @@ namespace FiscalBr.EFDContribuicoes
             /// <summary>
             ///     Código fiscal de operação e prestação
             /// </summary>
-            [SpedCampos(2, "CFOP", "N", 4, 0, true, 2)]
-            public string Cfop { get; set; }
+            [SpedCampos(2, "NUM_ITEM", "N", 3, 0, true, 2)]
+            public int NumItem { get; set; }
 
             /// <summary>
             ///     Valor total dos itens
