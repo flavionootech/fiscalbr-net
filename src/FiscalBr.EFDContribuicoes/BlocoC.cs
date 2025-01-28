@@ -2432,7 +2432,7 @@ namespace FiscalBr.EFDContribuicoes
             ///     Número de série do equipamento SAT
             /// </summary>
             [SpedCampos(3, "NR_SAT", "C", 9, 0, true, 2)]
-            public string NrSAT { get; set; }
+            public string NrSat { get; set; }
 
             /// <summary>
             ///     Data de emissão dos documentos fiscais
@@ -2444,13 +2444,13 @@ namespace FiscalBr.EFDContribuicoes
             ///     Número do documento inicial
             /// </summary>
             [SpedCampos(4, "DOC_INI", "N", 9, 0, false, 2)]
-            public int? DocIni { get; set; }
+            public int? NumDocIni { get; set; }
 
             /// <summary>
             ///     Número do documento final
             /// </summary>
             [SpedCampos(4, "DOC_FIM", "N", 9, 0, false, 2)]
-            public int? DocFim { get; set; }
+            public int? NumDocFim { get; set; }
 
             public List<RegistroC870> RegC870s { get; set; }
             public List<RegistroC880> RegC880s { get; set; }

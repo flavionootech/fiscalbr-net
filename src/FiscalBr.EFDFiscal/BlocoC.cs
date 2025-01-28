@@ -5144,7 +5144,7 @@ namespace FiscalBr.EFDFiscal
             ///     Preenchimento: informar o número do último CF-e-SAT emitido, mesmo que cancelado, no período, pelo equipamento.
             /// </remarks>
             [SpedCampos(6, "DOC_FIM", "N", 6, 0, true, 2)]
-            public int NumDocFin { get; set; }
+            public int NumDocFim { get; set; }
 
             public List<RegistroC870> RegC870s { get; set; }
             public List<RegistroC890> RegC890s { get; set; }
