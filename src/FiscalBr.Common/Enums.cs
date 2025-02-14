@@ -298,6 +298,13 @@ namespace FiscalBr.Common
         /// Validade: 01/01/2022 - 31/12/2022?
         /// </summary>
         [DefaultValue("018")] V18,
+
+        /// <summary>
+        /// Código: 016
+        /// Versão: 1.15
+        /// Validade: 01/01/2025 - ATE ALGUEM RECLAMAR?
+        /// </summary>
+        [DefaultValue("019")] V19,
     }
 
     public enum SimOuNao
