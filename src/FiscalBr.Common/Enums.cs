@@ -305,6 +305,13 @@ namespace FiscalBr.Common
         /// Validade: 01/01/2025 - ATE ALGUEM RECLAMAR?
         /// </summary>
         [DefaultValue("019")] V19,
+
+        /// <summary>
+        /// Código: 016
+        /// Versão: 1.15
+        /// Validade: 01/01/2025 - ATE ALGUEM RECLAMAR?
+        /// </summary>
+        [DefaultValue("020")] V20,
     }
 
     public enum SimOuNao
